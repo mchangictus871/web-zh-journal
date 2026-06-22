@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱游戏体育 | 专题介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            background-color: #f5f7fb;
+            color: #1e293b;
+        }
+
+        /* 深色头图横幅 */
+        .hero {
+            background: linear-gradient(145deg, #0b121f 0%, #1a2639 60%, #223044 100%);
+            padding: 4.5rem 2rem 5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, #3b82f6, #7c3aed, #3b82f6);
+            opacity: 0.7;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            color: #f1f5f9;
+            text-shadow: 0 2px 12px rgba(59, 130, 246, 0.25);
+        }
+
+        .hero .sub {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            color: #94a3b8;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding-top: 1rem;
+        }
+
+        /* 浅色正文区 */
+        .content {
+            max-width: 880px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 4rem;
+        }
+
+        .section-card {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            padding: 2rem 2.2rem;
+            margin-bottom: 2rem;
+            transition: box-shadow 0.2s;
+        }
+
+        .section-card:hover {
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.07);
+        }
+
+        .section-card h2 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 1.2rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 3px solid #3b82f6;
+            display: inline-block;
+        }
+
+        .section-card p {
+            margin-bottom: 1.2rem;
+            color: #334155;
+        }
+
+        .section-card p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .highlight-link {
+            color: #2563eb;
+            font-weight: 500;
+            text-decoration: none;
+            border-bottom: 1px dotted #3b82f6;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .highlight-link:hover {
+            color: #1d4ed8;
+            border-bottom: 1px solid #1d4ed8;
+        }
+
+        .tag-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem 0.8rem;
+            margin-top: 0.8rem;
+        }
+
+        .tag {
+            background: #eef2ff;
+            color: #1e40af;
+            font-size: 0.8rem;
+            font-weight: 500;
+            padding: 0.2rem 0.9rem;
+            border-radius: 20px;
+            display: inline-block;
+            letter-spacing: 0.01em;
+        }
+
+        .faq-item {
+            margin-bottom: 1rem;
+        }
+
+        .faq-item strong {
+            color: #0f172a;
+            display: block;
+            margin-bottom: 0.25rem;
+            font-size: 1.05rem;
+        }
+
+        .faq-item p {
+            margin-left: 0.2rem;
+            color: #475569;
+        }
+
+        .cta-foot {
+            text-align: center;
+            padding: 2.5rem 1rem 1.5rem;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 1rem;
+        }
+
+        .cta-foot p {
+            font-size: 1rem;
+            color: #475569;
+        }
+
+        .cta-foot .site-ref {
+            font-size: 1.3rem;
+            margin-top: 0.6rem;
+        }
+
+        .cta-foot .site-ref a {
+            color: #2563eb;
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.15s;
+        }
+
+        .cta-foot .site-ref a:hover {
+            border-bottom-color: #2563eb;
+        }
+
+        /* 响应式 */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero .sub {
+                font-size: 1rem;
+            }
+            .content {
+                padding: 2rem 1rem 3rem;
+            }
+            .section-card {
+                padding: 1.5rem 1.2rem;
+            }
+            .section-card h2 {
+                font-size: 1.35rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 3rem 1.2rem 3.5rem;
+            }
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 首页横幅 -->
+    <header class="hero">
+        <h1>爱游戏体育 · 专题</h1>
+        <p class="sub">面向体育爱好者与赛事关注者的信息聚合平台</p>
+    </header>
+
+    <!-- 正文区 -->
+    <main class="content">
+
+        <!-- 背景说明 -->
+        <article class="section-card">
+            <h2>站台背景</h2>
+            <p><a href="https://m-index-aiyouxi.com" class="highlight-link">爱游戏体育</a> 定位于体育资讯与数据服务方向，整合主流赛事动态、运动文化解读以及社区讨论内容。平台不涉及任何博彩、投注或违法诱导，始终以真实、客观的信息呈现为基本原则。</p>
+            <p>当前站点覆盖足球、篮球、网球及电子竞技等多个领域，通过结构化展示帮助用户快速了解重要比赛走势与行业观察。内容来源包括公开赛事统计、合规媒体引用及用户投稿（经审核发布），力求降低信息噪音。</p>
+            <div class="tag-row">
+                <span class="tag">赛事动态</span>
+                <span class="tag">数据参考</span>
+                <span class="tag">运动文化</span>
+                <span class="tag">社区交流</span>
+            </div>
+        </article>
+
+        <!-- 三段自然介绍 ① 可信与内容特点 -->
+        <article class="section-card">
+            <h2>可信框架与内容特点</h2>
+            <p>与部分泛娱乐资讯站不同，<a href="https://m-index-aiyouxi.com" class="highlight-link">爱游戏体育</a> 在内容筛选上设定了基本边界：不采用未经核实的网络传言，不渲染情绪化标题。每篇赛事摘要或专题分析均标注参考来源（如联赛官方数据、权威媒体），并定期更新过时信息。</p>
+            <p>为提升信息实用性，平台按运动项目、赛事等级、时间线三个维度组织内容。例如用户可筛选“欧洲五大联赛·近期赛果”或“大满贯赛事·签表进展”，减少无效浏览。同时保留开放的用户反馈入口，便于修正偏差。</p>
+        </article>
+
+        <!-- 三段自然介绍 ② 适用场景举例 -->
+        <article class="section-card">
+            <h2>适用场景摘要</h2>
+            <p>对于希望快速了解某轮联赛战果、关注特定球队转会动向、或查阅历史交锋数据的体育爱好者，<a href="https://m-index-aiyouxi.com" class="highlight-link">爱游戏体育</a> 可作为常备参考。页面结构偏向清单与短评结合，而非冗长叙事，适合移动端碎片时间阅读。</p>
+            <p>另外，站内设有“运动文化”栏目，不定期刊载体育史话、装备演变、战术图解等泛知识内容，满足深度阅读需求。所有公开数据均不涉及个人隐私收集，访问时无需注册即可浏览大部分内容。</p>
+        </article>
+
+        <!-- 三段自然介绍 ③ FAQ摘要风格 -->
+        <article class="section-card">
+            <h2>常见疑问摘要</h2>
+            <div class="faq-item">
+                <strong>内容更新频率如何？</strong>
+                <p>主流赛事期间保持每日更新，非赛期每周至少三次专题更新。重大转会或突发事件会在核实后尽快补充。</p>
+            </div>
+            <div class="faq-item">
+                <strong>是否支持用户投稿或纠错？</strong>
+                <p>支持。页面底部设有联系渠道（邮件或站内表单），编辑团队会在两个工作日内反馈。纠错信息经确认后会附注更正说明。</p>
+            </div>
+            <div class="faq-item">
+                <strong>与竞彩、预测类网站有何区别？</strong>
+                <p>本平台不提供任何赔率、投注建议或预测服务，仅聚焦于已发生的赛事信息与运动文化讨论。所有内容均符合相关法律法规要求。</p>
+            </div>
+        </article>
+
+        <!-- 页尾访问提示 -->
+        <div class="cta-foot">
+            <p>如需进一步浏览体育资讯、赛事数据与专题内容，可直接访问</p>
+            <div class="site-ref">
+                <a href="https://m-index-aiyouxi.com">爱游戏体育</a>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
