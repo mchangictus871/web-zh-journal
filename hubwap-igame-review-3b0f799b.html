@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>爱游戏 · 稳定入口与页面说明</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: linear-gradient(145deg, #fce4b8 0%, #f8d0a0 45%, #f2bc7a 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+    }
+
+    .card {
+      max-width: 880px;
+      width: 100%;
+      background: #fffcf7;
+      border-radius: 48px 24px 48px 24px;
+      box-shadow: 0 18px 40px rgba(180, 110, 40, 0.20), 0 8px 16px rgba(0,0,0,0.04);
+      padding: 48px 44px;
+      transition: all 0.25s ease;
+    }
+
+    h1 {
+      font-size: 2.12rem;
+      font-weight: 660;
+      letter-spacing: -0.02em;
+      color: #593d1d;
+      border-left: 8px solid #dd9833;
+      padding-left: 20px;
+      margin-bottom: 20px;
+      line-height: 1.25;
+    }
+
+    .lead {
+      font-size: 1.18rem;
+      line-height: 1.55;
+      color: #754e27;
+      background: #fceedb;
+      padding: 18px 24px;
+      border-radius: 36px 12px 36px 12px;
+      margin-bottom: 32px;
+      font-weight: 420;
+      box-shadow: inset 0 1px 2px rgba(255,255,240,0.7);
+    }
+
+    .section-title {
+      font-size: 1.22rem;
+      font-weight: 600;
+      color: #4f3a1e;
+      margin-top: 34px;
+      margin-bottom: 12px;
+      padding-bottom: 4px;
+      border-bottom: 2px solid #ecbf7a;
+      display: inline-block;
+    }
+
+    p {
+      color: #2f2416;
+      line-height: 1.72;
+      font-size: 1rem;
+      margin-bottom: 18px;
+    }
+
+    .quote-block {
+      background: #f9e5ca;
+      border-radius: 28px 8px 28px 8px;
+      padding: 20px 26px;
+      margin: 30px 0 28px 0;
+      font-style: normal;
+      font-weight: 430;
+      color: #3f2e18;
+      border-left: 5px solid #c9822a;
+      box-shadow: 0 4px 6px rgba(150, 90, 20, 0.06);
+    }
+
+    .quote-block::before {
+      content: "💡 提示";
+      display: block;
+      font-weight: 640;
+      font-size: 0.94rem;
+      letter-spacing: 0.02em;
+      color: #9c6e30;
+      margin-bottom: 8px;
+    }
+
+    .link-button {
+      display: inline-block;
+      background: #d9963a;
+      color: #281f0e;
+      font-weight: 590;
+      font-size: 1rem;
+      padding: 14px 32px;
+      border-radius: 60px 16px 60px 16px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.1s;
+      border: none;
+      box-shadow: 0 6px 0 #b37628;
+      margin: 6px 0 12px 0;
+      letter-spacing: 0.01em;
+    }
+
+    .link-button:hover {
+      background: #e4a64b;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 0 #b37628;
+    }
+
+    .link-button:active {
+      transform: translateY(2px);
+      box-shadow: 0 3px 0 #9e6922;
+    }
+
+    .inline-link {
+      color: #8e601b;
+      font-weight: 530;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.18s;
+    }
+
+    .inline-link:hover {
+      border-bottom-color: #d19639;
+    }
+
+    .faq-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin: 28px 0 12px;
+    }
+
+    .faq-item {
+      background: #f8ebda;
+      border-radius: 20px 8px 20px 8px;
+      padding: 18px 22px;
+      font-size: 0.96rem;
+    }
+
+    .faq-item strong {
+      display: block;
+      color: #4d361c;
+      font-weight: 630;
+      margin-bottom: 5px;
+      font-size: 1.02rem;
+    }
+
+    .faq-item span {
+      color: #3f311e;
+      line-height: 1.6;
+    }
+
+    .footer-note {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #e6cfb1;
+      font-size: 0.88rem;
+      color: #6f5433;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    @media (max-width: 640px) {
+      .card {
+        padding: 32px 22px;
+        border-radius: 32px 16px 32px 16px;
+      }
+      h1 {
+        font-size: 1.7rem;
+        padding-left: 16px;
+        border-left-width: 6px;
+      }
+      .lead {
+        font-size: 1.02rem;
+        padding: 14px 16px;
+      }
+      .link-button {
+        width: 100%;
+        text-align: center;
+        padding: 16px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>爱游戏 · 稳定入口与使用说明</h1>
+    <div class="lead">
+      一个轻量、可依赖的内容访问入口，面向希望快速定位爱游戏资源与信息的用户。本文档从页面结构、访问方式与常见疑问出发，提供简洁清晰的指引。
+    </div>
+
+    <p>
+      爱游戏是一个以内容聚合与信息呈现为核心定位的站点。对于日常使用者而言，一个稳定、无冗余跳转的入口能够显著减少查找成本。当前页面即承担这样的角色：它不替代主站功能，而是作为访问前的说明与导航辅助，帮助你在首次接触时快速建立认知。
+    </p>
+
+    <div class="section-title">▎ 页面定位与使用场景</div>
+    <p>
+      你正在阅读的 index 页主要面向两类场景：一是需要直接到达爱游戏主站但希望先了解概况的访客；二是通过书签或推荐链接进入，需要一个清晰入口确认目的地。如果你已经熟悉爱游戏，可通过下方的链接直接前往主站；如果尚未接触，下面的说明可以帮你判断它是否符合需要。
+    </p>
+
+    <p>
+      整个页面内容围绕一个核心链接展开——<a href="https://hubwap-igame.com" class="inline-link">爱游戏</a>。这个链接指向的是经过验证的稳定地址，页面内所有说明均以其为基础。请放心，该地址长期保持有效，且不包含任何附加重定向或参数追踪。
+    </p>
+
+    <div class="section-title">▎ 访问与连接建议</div>
+    <p>
+      为了确保访问顺畅，建议使用主流浏览器（Chrome、Edge、Safari 等）的最新版本。爱游戏页面结构已针对桌面端和移动端做适配，但部分资源加载依赖稳定的网络环境。如果你遇到加载延迟，可尝试刷新或检查本地网络连接。页面不要求注册或登录，直接进入即可浏览。
+    </p>
+
+    <div class="quote-block">
+      如果你通过第三方渠道看到本页，请注意核对域名是否为 <strong>hubwap-igame.com</strong>。任何拼写变体或相似域名均非官方入口。认准本次提供的链接，可以避免误入仿冒页面。
+    </div>
+
+    <div class="section-title">▎ 常见疑问摘要</div>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <strong>爱游戏是否需要安装额外软件？</strong>
+        <span>不需要。爱游戏完全基于浏览器访问，无需下载客户端或插件，所有内容均以网页形式呈现。</span>
+      </div>
+      <div class="faq-item">
+        <strong>页面加载后显示的内容是什么？</strong>
+        <span>爱游戏主站呈现的是分类信息与导航集合，具体内容随站点更新而变化。本说明页仅作为入口前的辅助参考。</span>
+      </div>
+      <div class="faq-item">
+        <strong>链接是否安全？长期有效吗？</strong>
+        <span>链接指向的域名为爱游戏官方地址，经过维护方确认。如果将来发生变化，本页也会同步更新指向，但短期内无变更计划。</span>
+      </div>
+    </div>
+
+    <div style="margin-top: 28px; text-align: left;">
+      <a href="https://hubwap-igame.com" class="link-button">爱游戏</a>
+      <span style="margin-left: 12px; font-size: 0.9rem; color: #6e512d;">— 稳定入口，直接访问</span>
+    </div>
+
+    <div class="footer-note">
+      <span>© 爱游戏 · 说明页</span>
+      <span>hubwap-igame.com</span>
+    </div>
+
+  </div>
+</body>
+</html>
